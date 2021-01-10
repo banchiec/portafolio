@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+code {
+  font-family:'camingo-code';
+  src: loca('camingo-code'), url(./fonts/CamingoCode-Italic.ttf) format('trueType');
+}
+
+code {
+  font-family:'cascadia-codePL-mono';
+  src: loca('cascadia-codePL-mono'), url(./fonts/CascadiaMonoPL.ttf) format('trueType');
+}
+code {
+  font-family:'cascadiaCode-Bold';
+  src: loca('cascadiaCode-Bold'), url(./fonts/CascadiaCode-Bold.otf) format('trueType');
+}

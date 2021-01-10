@@ -1,0 +1,34 @@
+.card-container {
+    margin-top: 8vw;
+    float: right;
+    margin-right: -5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: CascadiaCode-bold;
+
+    .card-title-container {
+        border: 1px solid green;
+    }
+
+    h1 {
+        font-size: 3.5vw;
+        letter-spacing: 4px;
+        text-align: center;
+        color: white;
+    }
+    p#card-tagline {
+        // border: 1px solid green;
+        font-size: 1.8vw;
+        font-family: cascadiaMonoPL;
+        letter-spacing: 2px;
+        color: white;
+    }
+
+    p#card-text {
+        border: 1px solid green;
+        color: white;
+        text-align: center;
+    }
+
+} 

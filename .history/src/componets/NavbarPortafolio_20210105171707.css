@@ -1,0 +1,19 @@
+nav#navbar1 {
+    /* border:1px solid green; */
+    background: transparent;
+    /* font-family: cascadia-codePL-mono; */
+    /* font-size: 3rem; */
+    font-family: cascadiaCode-Bold;
+    /* font-family: camingo-code; */
+}
+.noActive {
+    display: none;
+    visibility: hidden;
+}
+.fa-bars {
+    border-radius: 20px;
+    padding: 1rem;
+    background: #5e17eb;
+    font-size: 2rem;
+    color: white 
+}

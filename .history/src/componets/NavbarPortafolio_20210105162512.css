@@ -1,0 +1,9 @@
+nav#navbar1 {
+    /* border:1px solid green; */
+    background: transparent;
+    font-family: camingo-code;
+
+}
+.noActive {
+    display: none;
+}

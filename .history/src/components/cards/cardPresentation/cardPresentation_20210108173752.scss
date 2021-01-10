@@ -1,0 +1,36 @@
+.card-container {
+    margin-top: 8vw;
+    float: right;
+    margin-right: -14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: CascadiaCode-bold;
+
+    .card-title-container {
+        // border: 1px solid green;
+    }
+
+    h1 {
+        font-size: 3.5vw;
+        letter-spacing: 4px;
+        text-align: center;
+        color: white;
+    }
+    p#card-tagline {
+        // border: 1px solid green;
+        padding-top: 0;
+        color: #5e17eb; 
+        font-size: 2.1vw;
+        font-family: cascadiaMonoPL;
+        letter-spacing: 2px;
+    }
+    p#card-text {
+        margin-top: 4rem;
+        // border: 1px solid green;
+        letter-spacing: 0.1px;
+        font-size: 1.5vw;
+        color: white;
+        text-align: center;
+    }
+} 

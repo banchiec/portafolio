@@ -1,0 +1,10 @@
+nav#navbar1 {
+    /* border:1px solid green; */
+    background: transparent;
+    font-family: camingo-code;
+    justify-content: space-between;
+
+}
+.noActive {
+    border: 1px solid green;
+}

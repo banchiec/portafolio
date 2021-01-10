@@ -1,0 +1,31 @@
+.card-container {
+    // width: 100%;
+    margin-top: 8vw;
+    float: right;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: CascadiaCode-bold;
+
+
+
+    .card-title-container {
+        border: 1px solid green;
+    }
+
+    h1 {
+        font-size: 3.5vw;
+        text-align: start;
+        color: white;
+    }
+    p {
+        color: white;
+    }
+    h3 {
+        text-align: start;
+        color: white;
+        font-size: 2vw;
+    }
+
+} 
