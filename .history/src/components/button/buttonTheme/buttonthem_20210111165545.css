@@ -1,0 +1,11 @@
+ .fas {
+
+
+    position: absolute;
+    width: 2rem;
+    position: fixed;
+    float: left;
+    margin-right: 2%;
+    padding: 5rem;
+    /* bottom: 10px; */
+ }   

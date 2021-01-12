@@ -1,0 +1,32 @@
+.btn-menu {
+    transition: all .3s ease-out;
+    display: wrap;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    bottom: 45px;
+    pointer-events: none;
+    right: 6rem;
+    background: whitesmoke;
+    &.before {
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+.btn-hamburguer {
+    cursor: pointer;
+}
+.fa-sun {
+    color: orange;
+    margin-top: 1rem; 
+}
+.btn-hamburguer i {
+    font-size: 2.5rem;
+}
+.fa-moon{
+    cursor: pointer;
+    margin-top: .8rem; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+}

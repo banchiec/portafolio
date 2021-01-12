@@ -1,0 +1,145 @@
+
+.card-container {
+    // margin-top: 13vw;
+    // margin-left: 18rem;
+    // margin-right: -9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: CascadiaCode-bold;
+    z-index: -1;
+
+    h1 {
+        font-size: 3.5vw;
+        letter-spacing: 4px;
+        text-align: center;
+        color: white;
+    }
+    p#card-tagline {
+        // border: 1px solid green;
+        margin-top: -.8rem;
+        color: #5e17eb; 
+        font-size: 2.1vw;
+        font-family: cascadiaMonoPL;
+        letter-spacing: 2px;
+    }
+    p#card-text-portfolio {
+        margin-top: 3rem;
+        // border: 1px solid green;
+        // letter-spacing: 0.1px;
+        font-size: 1.35vw; 
+        color: white;
+        text-align: center;
+    }
+} 
+#card-btn-principal {
+    margin-top: 3rem;
+    a {
+        // border: 1px solid green;
+        color: white;
+        font-size: 1.6rem;
+        text-decoration: none;
+    }
+    width: 20%;
+    margin-left: 40.04%;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px 25px 0px;
+    background: #5e17eb ;
+    border-radius: 18px;
+}
+
+@media screen and (max-width: 460px) {
+  h1 {
+    // border: 1px solid green;
+    font-size: 12rem;
+  }
+  p#card-tagline {
+    border: 1px solid green;
+    font-size: 54px;
+  }
+
+  .dataFlow{
+    // width: 100%;
+    border: 1px solid green;
+    
+    // margin-left: -12rem;
+    // justify-content: start;
+  }
+  #card-btn-principal {
+    padding: 0;
+    font-size: .5rem;
+    margin-left: 20%;
+    width: 60%;
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+
+
+}
+
+// animation
+$green:#19A598;
+$black:#1C1C1C;
+$bg-image:linear-gradient($green, $green); // background-image
+$bg-size:2%; // background-size
+$n:15; // number of background-images
+
+// returns list => $all-bg-imgs:$bg-image, $bg-image, $bg-image, ... $n; 
+// my inspiration for sass lists https://github.com/sass/sass/issues/852 
+@function create-bg-imgs($n){
+  $all-bg-imgs:();
+  @for $i from 1 through $n {$all-bg-imgs:append($all-bg-imgs, $bg-image, comma);};
+  @return $all-bg-imgs;
+}
+
+// returns list => $bg-pos:(random(100)*1%), ... $n;
+@function pos-y(){
+  $bg-pos-y:();
+  @for $i from 1 through $n {$bg-pos-y:append($bg-pos-y, (random(100)*1%), comma);};
+  @return $bg-pos-y;
+}
+$bg-pos-y:pos-y();
+
+// returns list of background-position:x y;
+// y is taken from $bg-pos-y
+@function bg-pos(){
+  $bg-pos:();  
+  @for $i from 1 through $n {
+    $horizontal:(random(150)-25*1%);
+    $vertical:nth($bg-pos-y, $i);
+    $bg-pos:append($bg-pos,($horizontal $vertical),comma);  
+  };
+  @return $bg-pos;
+} 
+
+*, *:before, *:after {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html, body {
+}
+
+.dataFlow{
+  position: absolute;
+  padding: 10%;
+  width: 100%;
+  height:100%;
+  z-index: -1;
+  background-image:create-bg-imgs($n);
+  background-repeat:no-repeat;
+  background-size:($bg-size) ($bg-size / 5);
+  animation:lft-rght 100s infinite linear;
+}
+
+@keyframes lft-rght {
+  @for $i from 0 to 101 {
+    #{$i *1%} {
+      background-position:bg-pos();
+    }
+  }
+}

@@ -20,7 +20,6 @@ body {
 #material-btn {
   margin-top: 1.5rem;
   margin-left: 30rem;
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -35,7 +34,9 @@ body {
   #material-btn.active .material-hamburguer:before {
     transform: scale(30); }
   #material-btn .material-hamburguer {
-    transition: all .2s ease-out; }
+    transition: all .2s ease-out;
+    margin-top: 1.64rem;
+    margin-left: 1.4rem; }
     #material-btn .material-hamburguer:before {
       content: '';
       position: absolute;
@@ -51,7 +52,7 @@ body {
       transition: all 0.35s ease-out; }
     #material-btn .material-hamburguer .material-patty {
       width: 32px;
-      height: 3.5px;
+      height: 2.5px;
       background: white;
       transition: all 0.2s ease-out; }
       #material-btn .material-hamburguer .material-patty:not(:last-child) {
@@ -63,15 +64,16 @@ body {
       #material-btn .material-hamburguer.material-close .material-patty:nth-child(3) {
         transform: translate(9px, -4px) rotate(-45deg) scale(0.5, 1); }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 460px) {
   .menu-wrapper {
-    width: auto;
-    margin-top: -5rem;
-    border: 1px solid green; }
+    width: 80%;
+    margin-top: -5rem; }
 
   #material-btn {
-    float: left;
-    margin-left: 0; } }
+    float: right;
+    margin-left: 14rem; }
+    #material-btn.before {
+      width: 120%; } }
 .material-content {
   text-align: start;
   position: relative;

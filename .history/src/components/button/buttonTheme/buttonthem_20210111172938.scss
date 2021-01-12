@@ -1,0 +1,23 @@
+.btn-mas {
+    transition: all .3s ease-out;
+    &.before {
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    display: wrap;
+    position: absolute;
+    width: 75px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 75px;
+    // border: 1px solid green;
+    bottom: 45px;
+    right: 6rem;
+    background: #5e17eb;
+    .btn-patty {
+        width: 21px;
+        height: 12px;
+        background: white;
+    }
+
+}
