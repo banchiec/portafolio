@@ -1,0 +1,52 @@
+.btn-menu {
+    transition: all .3s ease-out;
+    display: wrap;
+    width: 75px;
+    // position: relative;
+    position:fixed;
+    height: 75px;
+    float: right;
+    border-radius: 50%;
+    bottom: 4rem;
+    // z-index: -10;
+    cursor: pointer;
+    // pointer-events: none;
+    // right: 6rem;
+    left: 5.5rem;
+    background: whitesmoke;
+    &.before {
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+.btn-hamburguer {
+}
+.fa-sun {
+    color: orange;
+    margin-top: 1rem; 
+}
+.btn-hamburguer i {
+    font-size: 2.5rem;
+}
+.fa-moon{
+    cursor: pointer;
+    margin-top: 1rem; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #06011c;
+    // color: black;
+}
+@media screen and (max-width: 460px) {
+    .btn-menu {
+        height: 8.9%;
+        width: 15%;
+        border: 1px solid green;
+        bottom: 2rem;
+        margin-left: -4rem;
+
+    }
+    .btn-hamburguer i {
+        border-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+}

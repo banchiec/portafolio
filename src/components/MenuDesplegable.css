@@ -66,14 +66,21 @@ body {
 
 @media screen and (max-width: 460px) {
   .menu-wrapper {
-    width: 80%;
+    width: 100%;
     margin-top: -5rem; }
 
   #material-btn {
     float: right;
-    margin-left: 14rem; }
-    #material-btn.before {
-      width: 120%; } }
+    margin-left: 15.8rem; }
+    #material-btn .material-hamburguer {
+      margin-top: 1.2rem;
+      margin-left: 1rem; }
+      #material-btn .material-hamburguer:before {
+        width: 55px;
+        height: 55px; }
+      #material-btn .material-hamburguer .material-patty {
+        width: 24px;
+        height: 2px; } }
 .material-content {
   text-align: start;
   position: relative;

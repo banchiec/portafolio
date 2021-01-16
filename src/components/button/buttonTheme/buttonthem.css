@@ -27,4 +27,23 @@
   -moz-osx-font-smoothing: grayscale;
   color: #06011c; }
 
+@media screen and (max-width: 460px) {
+  .fa-moon {
+    margin-top: .75rem; }
+
+  .fa-sun {
+    margin-top: 0.75rem; }
+
+  .btn-hamburguer {
+    border-bottom: 1rem; }
+
+  .btn-menu {
+    height: 8.9%;
+    width: 15%;
+    bottom: 2rem;
+    margin-left: -4rem; }
+
+  .btn-hamburguer i {
+    font-size: 2rem; } }
+
 /*# sourceMappingURL=buttonthem.css.map */
